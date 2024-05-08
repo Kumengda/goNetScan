@@ -19,5 +19,4 @@ func main() {
 	for _, v := range synScan {
 		fmt.Println(v)
 	}
-
 }
