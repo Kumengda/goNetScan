@@ -2,6 +2,10 @@ goNetScan 高性能网络扫描器
 
 ##### syn tcp扫描
 
+⚠️不支持在windows下运行,因为windows限制了对原始套接字的操作,只能通过libpcap等库对原始链路层进行操作。本项目采用的是原始套接字实现自定义tcp包。
+
+
+
 目前支持tcp端口扫描,采用原始套接字(SOCKET_RAW)发送syn包,使用gopacket进行流量监听带有ack标识的数据包。
 
 start:
